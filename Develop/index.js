@@ -8,24 +8,30 @@ function getQuestions() {
     .prompt([
         {
             type: "input",
-            message: "What is your name?",
-            name: "name"
+            message: "Enter Project Title: ",
+            name: "title"
         },
         {
              type: "input",
-             message: "what is your location?",
-             name: "location"
+             message: "Enter a description: ",
+             name: "description"
          },
          {
              type: "input",
-             message: "Please put your linkedIn url here:",
-             name: "linked"
+             message: "Enter Instillation details: ",
+             name: "installation"
          },
          {
              type: "input",
-             message: "Please put your github url here:",
-             name: "github"
-        }
+             message: "Credits:",
+             name: "credit"
+         },
+         {
+            type: "list",
+            message: "choose a license: ",
+            choices: ["MIT", "Standard", "Git"],
+            name: "license"
+         }
     ])
     .then((data) => {
         writeToFile('./index.html', data);
@@ -34,7 +40,7 @@ function getQuestions() {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data),function (err){
+    fs.writeFile(fileName, JSON.stringify(data.title),function (err){
     })
 }
 
