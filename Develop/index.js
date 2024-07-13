@@ -18,7 +18,7 @@ function getQuestions() {
          },
          {
              type: "input",
-             message: "Enter Instillation details: ",
+             message: "Enter Installation details: ",
              name: "installation"
          },
          {
@@ -33,20 +33,24 @@ function getQuestions() {
             name: "license"
          }
     ])
-    .then((data) => {
-        writeToFile('./index.html', data);
+    .then((data) => {     
+        writeToFile('./sampleREADME.md', data);
     })
 }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data.title),function (err){
+    var outStr =    'title: # ' + JSON.stringify(data.title) + '\n' +
+                    '## discription: \n' + JSON.stringify(data.description) + '\n' +
+                    '## installion: \n' + JSON.stringify(data.installation) + '\n' +
+                    "## credits: \n" + JSON.stringify(data.credit) + '\n' +
+                    '## license: \n' + JSON.stringify(data.license) + '\n'
+    fs.writeFile(fileName, outStr,function (err){
     })
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    //var fileName = ".. /README.md"
     getQuestions();
 }
 
