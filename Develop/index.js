@@ -40,7 +40,7 @@ function getQuestions() {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    var outStr =    'title: # ' + JSON.stringify(data.title) + '\n' +
+    var outStr =    '# ' + JSON.stringify(data.title) + '\n' +
                     '## discription: \n' + JSON.stringify(data.description) + '\n' +
                     '## installion: \n' + JSON.stringify(data.installation) + '\n' +
                     "## credits: \n" + JSON.stringify(data.credit) + '\n' +
