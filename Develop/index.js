@@ -41,10 +41,10 @@ function getQuestions() {
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     var outStr =    '# ' + JSON.stringify(data.title) + '\n' +
-                    '## discription: \n' + JSON.stringify(data.description) + '\n' +
-                    '## installion: \n' + JSON.stringify(data.installation) + '\n' +
-                    "## credits: \n" + JSON.stringify(data.credit) + '\n' +
-                    '## license: \n' + JSON.stringify(data.license) + '\n'
+                    '## discription: \n' + JSON.stringify(data.description) + '\n\n' +
+                    '## installion: \n' + JSON.stringify(data.installation) + '\n\n' +
+                    "## credits: \n" + JSON.stringify(data.credit) + '\n\n' +
+                    '## license: \n' + JSON.stringify(data.license) + '\n\n'
     fs.writeFile(fileName, outStr,function (err){
     })
 }

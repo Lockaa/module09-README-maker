@@ -1,9 +1,13 @@
-title: # "super something"
+# "Readme \\n maker"
 ## discription: 
-"test run"
+"this \\n is \\n cool"
+
 ## installion: 
-"N/A"
+"IDK"
+
 ## credits: 
-"myself"
+"Allen L"
+
 ## license: 
 "MIT"
+
