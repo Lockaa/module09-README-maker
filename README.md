@@ -78,29 +78,21 @@ This didn't seem too bad, but I was a bit confused by the badges thing for the l
 
 Assignment details:
 
-GIVEN a personal blog
-WHEN I load the app,
-THEN I am presented with the landing page containing a form with labels and inputs for username, blog title, and blog content.
-WHEN I submit the form,
-THEN blog post data is stored to localStorage.
-WHEN the form submits,
-THEN I am redirected to the posts page.
-WHEN I enter try to submit a form without a username, title, or content,
-THEN I am presented with a message that prompts me to complete the form.
-WHEN I view the posts page,
-THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
-WHEN I click the light mode/dark mode toggle,
-THEN the page content's styles update to reflect the selection.
-WHEN I click the "Back" button,
-THEN I am redirected back to the landing page where I can input more blog entries.
-WHEN I view the main content,
-THEN I am presented with a list of blog posts that are pulled from localStorage.
-WHEN I view localStorage,
-THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
-WHEN I take a closer look at a single blog entry in the list,
-THEN I can see the title, the content, and the author of the post.
-WHEN I view the footer,
-THEN I am presented with a link to the developer's portfolio.
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
 
 Github repo:
 https://github.com/Lockaa/module09-README-maker
